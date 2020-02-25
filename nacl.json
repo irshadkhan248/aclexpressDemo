@@ -1,0 +1,50 @@
+[
+    {
+        "group": "admin",
+        "permissions": [
+            {
+                "resource": "*",
+                "methods": "*",
+                "action": "allow"
+            }
+        ]
+    },
+    {
+        "group": "user",
+        "permissions": [
+            {
+                "resource": "student/*",
+                "methods": [
+                    "DELETE"
+                ],
+                "action": "deny"
+            },
+            {
+                "resource": "user/*",
+                "methods": [
+                    "DELETE"
+                ],
+                "action": "deny"
+            }
+        ]
+    },
+    {
+        "group": "guest",
+        "permissions": [
+            {
+                "resource": "student/*",
+                "methods": [
+                    "GET"
+                ],
+                "action": "allow"
+            },
+            {
+                "resource": "user/*",
+                "methods": [
+                    "GET"
+                ],
+                "action": "allow"
+            }
+        ]
+    }
+]
