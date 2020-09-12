@@ -18,7 +18,7 @@
         "body-parser": "^1.19.0",
         "express-acl": "^2.0.8",
         "jsonwebtoken": "^8.5.1",
-        "node-fetch": "^2.6.0",
+        "node-fetch": "^2.6.1",
         "path": "^0.12.7",
         "request": "^2.88.0",
         "speakeasy": "^2.0.0",
